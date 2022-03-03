@@ -7,7 +7,7 @@ import {
 } from 'vue-router'
 
 import Home from './views/Home.vue';
-import Doc from './views/Doc.vue';
+import Doc from './views/Doc111.vue';
 
 const history = createWebHashHistory();
 const router = createRouter(
