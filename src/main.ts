@@ -1,28 +1,11 @@
+import { router } from './router';
 import { createApp } from 'vue'
 import App from './App.vue'
 import './index.scss'
-import {
-    createWebHashHistory,
-    createRouter
-} from 'vue-router'
 
-import Home from './views/Home.vue';
-import Doc from './views/Doc111.vue';
-
-const history = createWebHashHistory();
-const router = createRouter(
-    {
-        history,
-        routes: [
-            {
-                path: '/', component: Home
-            },
-            {
-                path: '/doc', component: Doc
-            }
-        ]
-    }
-);
+router.afterEach(() => {
+    console.log('路由切换了');
+})
 
 const app = createApp(App);
 app.use(router);
