@@ -21,4 +21,7 @@ span {
   background-color: white;
   border-radius: calc($h2 / 2);
 }
+button:hover > span {
+  left: calc(100% - #{$h2} - 2px);
+}
 </style>
