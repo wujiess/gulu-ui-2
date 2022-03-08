@@ -34,7 +34,7 @@ button {
     left: 2px;
     height: $h2;
     width: $h2;
-    background-color: white;
+    background-color: #fff;
     border-radius: calc($h2 / 2);
     transition: all 250ms;
   }
